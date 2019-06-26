@@ -1,0 +1,140 @@
+@media (max-width: 1024px) {
+  #main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .main-content {
+      grid-row: 1 / 2;
+      grid-template-columns: 1fr;
+      padding: 2rem;
+
+      &-img {
+        img {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      }
+
+      &-info {
+        align-items: center;
+      }
+    }
+
+    .main-sidebar {
+      &-page {
+        #timeline {
+          display: flex;
+          flex-direction: column;
+          margin: 0 150px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    grid-template-rows: auto;
+    .main-content {
+      &-img {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      &-info {
+        .quote {
+          font-size: 0.8rem;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+        .bio {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .main-sidebar {
+      &-page {
+        #timeline {
+          margin: 20px 75px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #main {
+    grid-template-rows: auto;
+    .main-content {
+      &-img {
+        img {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-info {
+        h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+        }
+        .bio {
+          margin-bottom: 0.9rem;
+        }
+        .btn {
+          width: 75%;
+        }
+      }
+    }
+    .main-sidebar {
+      &-page {
+        #timeline {
+          margin: 25px 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #main {
+    grid-template-rows: auto;
+    .main-content {
+      &-img {
+        img {
+          margin-top: -1rem;
+          width: 175px;
+          height: 175px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      &-info {
+        .quote {
+          display: none;
+        }
+        h1 {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+        .bio {
+          margin-bottom: 0.85rem;
+        }
+        .btn {
+          width: 75%;
+        }
+      }
+    }
+    .main-sidebar {
+      &-page {
+        #timeline {
+          margin: 25px 35px;
+        }
+      }
+    }
+  }
+}
